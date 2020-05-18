@@ -1,0 +1,29 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 300 Light;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+//--------------------------------------
+
+@mixin font($f-name, $f-style, $f-weight, $f-url, $display) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    font-display: $display;
+    src: url("#{$f-url}.woff2") format("woff2");
+    src: url("#{$f-url}.woff") format("woff");
+  }
+}
+
+@include font("Firasans", normal, 700, "../fonts/firasans-bold-webfont", swap);
+@include font("Firasans", normal, 500, "../fonts/firasans-medium-webfont", swap);
+@include font("Firasans", normal, 400, "../fonts/firasans-regular-webfont", swap);
+@include font("Montserrat", normal, 700, "../fonts/montserrat-bold-webfont", swap);
+@include font("Raleway", normal, 800, "../fonts/raleway-extrabold-webfont", swap);

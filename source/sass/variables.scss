@@ -1,0 +1,46 @@
+
+// Color
+//---------------------------------
+
+$color-default-black:              #000000 !default;
+$color-default-white:              #ffffff !default;
+
+
+// gradient
+//---------------------------------
+
+
+// Typography
+//---------------------------------
+
+$font-family--sansSerif:           "Arial", sans-serif !default;
+
+//fonts
+
+$firasans:                         "Firasans", $font-family--sansSerif;
+$raleway:                          "Raleway", $font-family--sansSerif;
+$montserrat:                       "Montserrat", $font-family--sansSerif;
+
+// shadow
+//---------------------------------
+
+
+// Media queries
+//---------------------------------
+
+$mobile--only:                       320px !default;
+$mobile--max:                        767px !default;
+$tablet--max:                       1023px !default;
+$desktop--min:                      1024px !default;
+$desktop--max:                      1366px !default;
+
+// retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
+
+// animation
+//---------------------------------
+
+$animate:                          0.2s linear;

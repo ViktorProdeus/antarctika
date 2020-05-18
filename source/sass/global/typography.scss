@@ -1,0 +1,16 @@
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font-family--sansSerif;
+  color: $color-default-black;
+  background-color: $color-default-white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}

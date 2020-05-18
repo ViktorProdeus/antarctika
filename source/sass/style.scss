@@ -1,0 +1,20 @@
+@import "normalize";
+@import "mixins";
+@import "variables";
+
+// vendor
+//---------------------------------
+
+// @import "vendor/swiper";
+
+// global
+//---------------------------------
+
+@import "global/fonts";
+@import "global/utils";
+@import "global/reboot";
+@import "global/typography";
+@import "global/container";
+
+// blocks
+//---------------------------------
