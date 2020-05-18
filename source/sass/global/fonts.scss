@@ -22,8 +22,7 @@
   }
 }
 
-@include font("Firasans", normal, 700, "../fonts/firasans-bold-webfont", swap);
-@include font("Firasans", normal, 500, "../fonts/firasans-medium-webfont", swap);
-@include font("Firasans", normal, 400, "../fonts/firasans-regular-webfont", swap);
-@include font("Montserrat", normal, 700, "../fonts/montserrat-bold-webfont", swap);
-@include font("Raleway", normal, 800, "../fonts/raleway-extrabold-webfont", swap);
+@include font("Montserrat", normal, 700, "../fonts/montserrat-bold-webfont.woff", swap);
+@include font("Montserrat", normal, 600, "../fonts/montserrat-semibold-webfont", swap);
+@include font("Montserrat", normal, 500, "../fonts/montserrat-medium-webfont", swap);
+@include font("Montserrat", normal, 400, "../fonts/montserrat-regular-webfont", swap);
