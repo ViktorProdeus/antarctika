@@ -1,0 +1,94 @@
+.about {
+  padding: 120px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner-content {
+    padding-right: 80px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__inner-image {
+    flex-shrink: 0;
+    width: 560px;
+    height: 301px;
+
+    background-image: url("../img/desktop/penguins@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/desktop/penguins@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet--max) {
+    padding: 91px 0;
+
+    &__inner-content {
+      padding-right: 30px;
+
+      h2 {
+        margin-bottom: 17px;
+        font-size: 26px;
+        line-height: 1.4;
+      }
+    }
+
+    &__inner-image {
+      width: 324px;
+      height: 264px;
+
+      background-image: url("../img/tablet/penguins@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include retina {
+        background-image: url("../img/tablet/penguins@2x.jpg");
+      }
+    }
+  }
+
+  @media (max-width: $mobile--max) {
+    padding: 58px 0;
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__inner-content {
+      padding-right: 0;
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 1.4;
+      }
+
+      p {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__inner-image {
+      margin: 0 auto;
+      width: 290px;
+      height: 186px;
+
+      background-image: url("../img/mobile/penguins@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include retina {
+        background-image: url("../img/mobile/penguins@2x.jpg");
+      }
+    }
+  }
+}

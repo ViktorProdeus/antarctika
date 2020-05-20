@@ -368,13 +368,6 @@ body {
 html {
   box-sizing: border-box; }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0; }
-
 img,
 video {
   display: block;
@@ -455,6 +448,13 @@ body {
 
 a {
   text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; }
 
 .container {
   margin: 0 auto;
@@ -667,3 +667,70 @@ a {
         margin-right: 12px; }
       .main-header__paragraph-span {
         margin-right: 4px; } }
+
+.main-content h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5; }
+
+.about {
+  padding: 120px 0; }
+  .about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .about__inner-content {
+    padding-right: 80px; }
+    .about__inner-content h2 {
+      margin-bottom: 20px; }
+  .about__inner-image {
+    flex-shrink: 0;
+    width: 560px;
+    height: 301px;
+    background-image: url("../img/desktop/penguins@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .about__inner-image {
+        background-image: url("../img/desktop/penguins@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .about {
+      padding: 91px 0; }
+      .about__inner-content {
+        padding-right: 30px; }
+        .about__inner-content h2 {
+          margin-bottom: 17px;
+          font-size: 26px;
+          line-height: 1.4; }
+      .about__inner-image {
+        width: 324px;
+        height: 264px;
+        background-image: url("../img/tablet/penguins@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .about__inner-image {
+        background-image: url("../img/tablet/penguins@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .about {
+      padding: 58px 0; }
+      .about__wrapper {
+        flex-wrap: wrap; }
+      .about__inner-content {
+        padding-right: 0; }
+        .about__inner-content h2 {
+          margin-bottom: 15px;
+          font-size: 24px;
+          line-height: 1.4; }
+        .about__inner-content p {
+          margin-bottom: 32px; }
+      .about__inner-image {
+        margin: 0 auto;
+        width: 290px;
+        height: 186px;
+        background-image: url("../img/mobile/penguins@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+      .about__inner-image {
+        background-image: url("../img/mobile/penguins@2x.jpg"); } }
