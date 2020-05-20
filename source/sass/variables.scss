@@ -2,9 +2,14 @@
 // Color
 //---------------------------------
 
-$color-default-black:              #000000 !default;
-$color-default-white:              #ffffff !default;
+$darkblue:                                            #011c40 !default;
+$lightgray:                                           #f9fbfd !default;
+$text-dark:                                                    $darkblue;
+$text-light:                                                  $lightgray;
+$text-lightdark:                                      #d8d8d9 !default;
 
+$default-bg--blue:                                    #003a70 !default;
+$default-bg--skyblue:                                 #e3ecf6 !default;
 
 // gradient
 //---------------------------------
@@ -13,12 +18,10 @@ $color-default-white:              #ffffff !default;
 // Typography
 //---------------------------------
 
-$font-family--sansSerif:           "Arial", sans-serif !default;
+$font-family--sansSerif:                    "Arial", sans-serif !default;
 
 //fonts
 
-$firasans:                         "Firasans", $font-family--sansSerif;
-$raleway:                          "Raleway", $font-family--sansSerif;
 $montserrat:                       "Montserrat", $font-family--sansSerif;
 
 // shadow
@@ -28,19 +31,19 @@ $montserrat:                       "Montserrat", $font-family--sansSerif;
 // Media queries
 //---------------------------------
 
-$mobile--only:                       320px !default;
-$mobile--max:                        767px !default;
-$tablet--max:                       1023px !default;
-$desktop--min:                      1024px !default;
-$desktop--max:                      1366px !default;
+$mobile--only:                                            320px !default;
+$mobile--max:                                             767px !default;
+$tablet--max:                                            1023px !default;
+$desktop--min:                                           1024px !default;
+$desktop--max:                                           1366px !default;
 
 // retina
 //---------------------------------
 
-$retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;
+$retina-dpi:                                                      144dpi;
+$retina-dppx:                                                    1.5dppx;
 
 // animation
 //---------------------------------
 
-$animate:                          0.2s linear;
+$animate:                                                    0.2s linear;

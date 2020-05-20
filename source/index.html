@@ -6,29 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="ключевые слова">
-  <title>Start-template</title>
+  <title>Антарктика</title>
 
-  <!-- <link rel="preload" href="fonts/....woff2" as="font">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="preload" href="fonts/montserrat-bold-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-regular-webfont.woff2" as="font">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!-- <div style="display:none">
-    <include src="./"></include>
-  </div> -->
+  <div style="display:none">
+    <include src="build/img/svg/sprite_auto.svg"></include>
+  </div>
 
   <div class="site-wrapper">
-    <header class="main-header" style="background-color: skyblue; padding-left: 50px;">
-      <h2>header</h2>
+    <header class="main-header main-header--no-js">
+      <nav class="main-header__nav">
+        <div class="container main-header__nav-inner">
+          <a class="main-header__logo" aria-label="логотип в шапке сайта">
+            <svg width="70" height="38" viewbox="0 0 70 38">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок преимущества">
+                Преимущества
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок о путешествии">
+                Направления
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок Круизы">
+                Ближайшие круизы
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок контакты">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <button class="main-header__burger main-header__no-js" aria-label="кнопка меню">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="main-header__promo">
+          <h1><span class="main-header__headding-span">Круизы</span> в Антарктику</h1>
+          <p><span class="main-header__paragraph-span">Волшебный мир</span> айсбергов и пингвинов</p>
+        </div>
+      </div>
+
     </header>
 
-    <main class="main-content" style="padding: 50px;">
-      <h1 style="text-align: center;">Start-template 1.0.0</h1>
+    <main class="main-content">
+      <!-- main -->
     </main>
 
-    <footer class="main-footer" style="background-color: skyblue; padding-left: 50px;">
-      <h2>footer</h2>
+    <footer class="main-footer">
+      <!-- footer -->
     </footer>
   </div>
 

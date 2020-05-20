@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/polyfill-foreach */ \"./js/utils/polyfill-foreach.js\");\n/* harmony import */ var _utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/init-ie11-download */ \"./js/utils/init-ie11-download.js\");\n\n // Utils\n// ---------------------------------\n\nObject(_utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__[\"forEachPolyfill\"])();\nObject(_utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__[\"initIe11Download\"])(); // Modules\n// ---------------------------------\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/polyfill-foreach */ \"./js/utils/polyfill-foreach.js\");\n/* harmony import */ var _utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/init-ie11-download */ \"./js/utils/init-ie11-download.js\");\n/* harmony import */ var _main_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main/menu */ \"./js/main/menu.js\");\n\n // Utils\n// ---------------------------------\n\nObject(_utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__[\"forEachPolyfill\"])();\nObject(_utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__[\"initIe11Download\"])(); // Modules\n// ---------------------------------\n\n\n\n//# sourceURL=webpack:///./js/main.js?");
+
+/***/ }),
+
+/***/ "./js/main/menu.js":
+/*!*************************!*\
+  !*** ./js/main/menu.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar menu = function menu() {\n  var isClassNoJs = document.querySelector(\".main-header--no-js\");\n  var siteNavigation = document.querySelector(\".main-header__nav\");\n  var buttonMenu = document.querySelector(\".main-header__burger\");\n\n  if (isClassNoJs) {\n    buttonMenu.classList.add(\"main-header__burger--close\");\n    isClassNoJs.classList.remove(\"main-header--no-js\");\n    siteNavigation.classList.add(\"main-header__nav--close\");\n  }\n\n  buttonMenu.addEventListener(\"click\", function (evt) {\n    evt.preventDefault();\n    buttonMenu.classList.toggle(\"main-header__burger--close\");\n    siteNavigation.classList.toggle(\"main-header__nav--close\");\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu());\n\n//# sourceURL=webpack:///./js/main/menu.js?");
 
 /***/ }),
 

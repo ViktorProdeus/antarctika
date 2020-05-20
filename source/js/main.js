@@ -8,3 +8,5 @@ initIe11Download();
 
 // Modules
 // ---------------------------------
+
+import './main/menu';

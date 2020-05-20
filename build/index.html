@@ -6,29 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="ключевые слова">
-  <title>Start-template</title>
+  <title>Антарктика</title>
 
-  <!-- <link rel="preload" href="fonts/....woff2" as="font">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="preload" href="fonts/montserrat-bold-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-regular-webfont.woff2" as="font">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!-- <div style="display:none">
-    <include src="./"></include>
-  </div> -->
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo" viewBox="0 0 70 38"><path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z"></path></symbol><symbol id="icon-checked" viewBox="0 0 38 21"><path d="M28.753 2.215L26.44 0 16.073 9.933l2.314 2.215 10.366-9.933zM35.694 0L18.38 16.57l-6.819-6.528-2.313 2.215L18.379 21 38 2.215 35.694 0zM0 12.257L9.132 21l2.314-2.215-9.132-8.743L0 12.257z" fill="#011C40"></path></symbol></svg>
+  </div>
 
   <div class="site-wrapper">
-    <header class="main-header" style="background-color: skyblue; padding-left: 50px;">
-      <h2>header</h2>
+    <header class="main-header main-header--no-js">
+      <nav class="main-header__nav">
+        <div class="container main-header__nav-inner">
+          <a class="main-header__logo" aria-label="логотип в шапке сайта">
+            <svg width="70" height="38" viewbox="0 0 70 38">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок преимущества">
+                Преимущества
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок о путешествии">
+                Направления
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок Круизы">
+                Ближайшие круизы
+              </a>
+            </li>
+
+            <li class="main-header__nav-item">
+              <a href="#" class="main-header__nav-link" aria-label="ссылка на блок контакты">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <button class="main-header__burger main-header__no-js" aria-label="кнопка меню">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="main-header__promo">
+          <h1><span class="main-header__headding-span">Круизы</span> в Антарктику</h1>
+          <p><span class="main-header__paragraph-span">Волшебный мир</span> айсбергов и пингвинов</p>
+        </div>
+      </div>
+
     </header>
 
-    <main class="main-content" style="padding: 50px;">
-      <h1 style="text-align: center;">Start-template 1.0.0</h1>
+    <main class="main-content">
+      <!-- main -->
     </main>
 
-    <footer class="main-footer" style="background-color: skyblue; padding-left: 50px;">
-      <h2>footer</h2>
+    <footer class="main-footer">
+      <!-- footer -->
     </footer>
   </div>
 
