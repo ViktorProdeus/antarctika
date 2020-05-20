@@ -687,7 +687,7 @@ p {
         background-image: url("../img/desktop/penguins@2x.jpg"); } }
   @media (max-width: 1023px) {
     .about {
-      padding: 91px 0; }
+      padding: 91px 0 92px; }
       .about__inner-content {
         padding-right: 30px; }
         .about__inner-content h2 {
@@ -705,7 +705,7 @@ p {
         background-image: url("../img/tablet/penguins@2x.jpg"); } }
   @media (max-width: 767px) {
     .about {
-      padding: 58px 0; }
+      padding: 58px 0 66px; }
       .about__wrapper {
         flex-wrap: wrap; }
       .about__inner-content {
@@ -741,7 +741,7 @@ p {
     text-align: center;
     margin-bottom: 47px; }
   .advantages__list {
-    margin: 0 0 0 -40px;
+    margin: 0 0 0 -3.333%;
     padding: 0;
     list-style: none;
     display: flex;
@@ -751,9 +751,9 @@ p {
     position: relative;
     flex-shrink: 0;
     flex-grow: 1;
-    margin: 0 0 40px 40px;
+    margin: 0 0 3.333% 3.333%;
     padding: 83px 30px 25px;
-    max-width: 360px;
+    max-width: 30%;
     width: 100%;
     min-height: 241px;
     background-color: #f9fbfd; }
@@ -784,3 +784,102 @@ p {
     .advantages__item p {
       font-size: 14px;
       line-height: 1.4; }
+  @media (max-width: 1023px) {
+    .advantages {
+      padding: 91px 0 71px;
+      min-height: 588px;
+      background-image: url("../img/tablet/advantages__bg@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/tablet/advantages__bg@2x.jpg"); } }
+  @media (max-width: 1023px) {
+      .advantages h2 {
+        font-size: 26px;
+        margin-bottom: 48px; }
+      .advantages__list {
+        margin: 0 0 0 -4.25%; }
+      .advantages__item {
+        margin: 0 0 4.247% 4.247%;
+        padding: 72px 18px 18px 19px;
+        max-width: 29.08%;
+        width: 100%;
+        min-height: 310px;
+        background-color: #f9fbfd; }
+        .advantages__item::before {
+          position: absolute;
+          content: "";
+          left: 18px; }
+        .advantages__item--big-boat::before {
+          width: 21px;
+          height: 26px;
+          top: 26px;
+          background-image: url("../img/svg/boat__big.svg");
+          background-size: cover; }
+        .advantages__item--checked::before {
+          width: 33px;
+          height: 19px;
+          top: 28px;
+          background-image: url("../img/svg/checked.svg"); }
+        .advantages__item--small-boat::before {
+          width: 38px;
+          height: 13px;
+          top: 31px;
+          background-image: url("../img/svg/boat__small.svg"); }
+        .advantages__item h3 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.43;
+          margin-bottom: 9px; }
+        .advantages__item p {
+          font-size: 14px;
+          line-height: 1.43; } }
+  @media (max-width: 767px) {
+    .advantages {
+      padding: 58px 0 34px;
+      min-height: 588px;
+      background-image: url("../img/mobile/advantages__bg@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/mobile/advantages__bg@2x.jpg"); } }
+  @media (max-width: 767px) {
+      .advantages h2 {
+        font-size: 24px;
+        margin-bottom: 28px; }
+      .advantages__list {
+        margin: 0; }
+      .advantages__item {
+        margin: 0 0 30px;
+        padding: 72px 18px 18px 19px;
+        max-width: 100%;
+        width: 100%;
+        min-height: 249px;
+        background-color: #f9fbfd; }
+        .advantages__item::before {
+          position: absolute;
+          content: "";
+          left: 18px; }
+        .advantages__item--big-boat::before {
+          width: 21px;
+          height: 26px;
+          top: 26px;
+          background-image: url("../img/svg/boat__big.svg");
+          background-size: cover; }
+        .advantages__item--checked::before {
+          width: 33px;
+          height: 19px;
+          top: 28px;
+          background-image: url("../img/svg/checked.svg"); }
+        .advantages__item--small-boat::before {
+          width: 38px;
+          height: 13px;
+          top: 31px;
+          background-image: url("../img/svg/boat__small.svg"); }
+        .advantages__item h3 {
+          width: 75%;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.43;
+          margin-bottom: 9px; }
+        .advantages__item p {
+          font-size: 14px;
+          line-height: 1.43; } }
