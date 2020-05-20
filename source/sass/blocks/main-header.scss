@@ -283,9 +283,6 @@
       margin-top: 178px;
 
       h1 {
-        display: flex;
-        flex-wrap: wrap;
-
         max-width: 430px;
         margin: 0 auto 10px;
         font-size: 36px;
@@ -293,22 +290,11 @@
       }
 
       p {
-        display: flex;
-        flex-wrap: wrap;
-
         max-width: 430px;
         margin: 0 auto;
         font-size: 16px;
         line-height: 1.4;
       }
-    }
-
-    &__headding-span {
-      margin-right: 12px;
-    }
-
-    &__paragraph-span {
-      margin-right: 4px;
     }
   }
 }
