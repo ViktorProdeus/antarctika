@@ -726,3 +726,61 @@ p {
     @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .about__inner-image {
         background-image: url("../img/mobile/penguins@2x.jpg"); } }
+
+.advantages {
+  padding: 112px 0 80px;
+  min-height: 562px;
+  background-color: #e3ecf6;
+  background-image: url("../img/desktop/advantages__bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/desktop/advantages__bg@2x.jpg"); } }
+  .advantages h2 {
+    text-align: center;
+    margin-bottom: 47px; }
+  .advantages__list {
+    margin: 0 0 0 -40px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+  .advantages__item {
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin: 0 0 40px 40px;
+    padding: 83px 30px 25px;
+    max-width: 360px;
+    width: 100%;
+    min-height: 241px;
+    background-color: #f9fbfd; }
+    .advantages__item::before {
+      position: absolute;
+      content: "";
+      left: 30px; }
+    .advantages__item--big-boat::before {
+      width: 27px;
+      height: 32px;
+      top: 30px;
+      background-image: url("../img/svg/boat__big.svg"); }
+    .advantages__item--checked::before {
+      width: 38px;
+      height: 21px;
+      top: 35px;
+      background-image: url("../img/svg/checked.svg"); }
+    .advantages__item--small-boat::before {
+      width: 42px;
+      height: 15px;
+      top: 38px;
+      background-image: url("../img/svg/boat__small.svg"); }
+    .advantages__item h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 12px; }
+    .advantages__item p {
+      font-size: 14px;
+      line-height: 1.4; }
