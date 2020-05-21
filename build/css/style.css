@@ -916,7 +916,9 @@ p {
     display: none; }
   .cruises__item {
     position: relative;
-    flex: 1 0 260px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 260px;
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
@@ -992,7 +994,9 @@ p {
       .cruises__img-tablet {
         display: block; }
       .cruises__item {
-        flex: 1 0 309px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 309px;
         padding: 30px 30px 27px 35px; }
       .cruises__description {
         padding: 30px 35px 22px; } }
@@ -1007,7 +1011,9 @@ p {
       .cruises__img-tablet {
         display: block; }
       .cruises__item {
-        flex: 1 0 270px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 270px;
         margin: 15px 10px;
         padding: 30px 30px 17px 25px; }
       .cruises__description {
