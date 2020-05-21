@@ -10,6 +10,7 @@
   color: rgba($text-dark, 1);
   background-color: $lightgray;
   transition: color $animate;
+  border: none;
 
   &:hover,
   &:focus {
