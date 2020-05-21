@@ -1,0 +1,170 @@
+.cruises {
+  padding: 112px 0 104px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__img-tablet {
+    display: none;
+  }
+
+  &__item {
+    position: relative;
+    flex: 1 0 260px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 15px;
+    padding: 30px 30px 22px;
+    min-height: 386px;
+    color: $text-light;
+
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    h3 {
+      align-self: flex-end;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    &:hover .cruises__description {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__description {
+    opacity: 0;
+    transform: scale(0);
+    padding: 29px 25px 22px;
+
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $darkblue;
+    transition: transform $animate, opacity $animate;
+
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    &-list {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    &-item {
+      margin-bottom: 12px;
+
+      h5 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 2px;
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.4;
+
+        color: $text-lightdark;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 24px;
+    min-width: 210px;
+    min-height: 40px;
+  }
+
+  @media (max-width: $tablet--max) {
+    padding: 91px 0;
+
+    h2 {
+      margin-bottom: 33px;
+      font-size: 26px;
+    }
+
+    &__img-desctop {
+      display: none;
+    }
+
+    &__img-tablet {
+      display: block;
+    }
+
+    &__item {
+      flex: 1 0 309px;
+      padding: 30px 30px 27px 35px;
+    }
+
+    &__description {
+      padding: 30px 35px 22px;
+    }
+  }
+
+  @media (max-width: $mobile--max) {
+    padding: 59px 0 50px;
+
+    h2 {
+      margin-bottom: 13px;
+      font-size: 24px;
+    }
+
+    &__img-desctop {
+      display: none;
+    }
+
+    &__img-tablet {
+      display: block;
+    }
+
+    &__item {
+      flex: 1 0 270px;
+      margin: 15px 10px;
+      padding: 30px 30px 17px 25px;
+    }
+
+    &__description {
+      padding: 30px 25px 22px;
+    }
+  }
+}

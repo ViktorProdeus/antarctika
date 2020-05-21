@@ -1,0 +1,18 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 25px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba($text-dark, 1);
+  background-color: $lightgray;
+  transition: color $animate;
+
+  &:hover,
+  &:focus {
+    color: rgba($text-dark, 0.5);
+  }
+}
