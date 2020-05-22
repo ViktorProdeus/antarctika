@@ -1178,3 +1178,244 @@ p {
         top: 7px; }
       .feedback__btn {
         margin-top: 27px; } }
+
+.contacts {
+  padding: 120px 0; }
+  .contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .contacts__map {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    min-height: 306px; }
+    .contacts__map::before {
+      position: absolute;
+      z-index: 2;
+      content: "";
+      width: 18px;
+      height: 22px;
+      top: 217px;
+      left: 249px;
+      background-image: url("../img/svg/pin.svg");
+      background-repeat: no-repeat; }
+    .contacts__map img {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+  .contacts__img--tablet {
+    display: none; }
+  .contacts__img--mobile {
+    display: none; }
+  .contacts__descriptions {
+    max-width: 530px;
+    padding-left: 30px; }
+    .contacts__descriptions h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 33px; }
+  .contacts__location p {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 28px; }
+    .contacts__location p::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      width: 18px;
+      height: 22px;
+      top: 0;
+      left: 0;
+      background-image: url("../img/svg/pin.svg");
+      background-repeat: no-repeat; }
+  .contacts__phone {
+    position: relative;
+    padding-left: 28px;
+    color: inherit;
+    transition: opacity 0.2s linear; }
+    .contacts__phone:hover, .contacts__phone:focus {
+      opacity: 0.5; }
+    .contacts__phone::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      width: 18px;
+      height: 18px;
+      top: 0;
+      left: 0;
+      background-image: url("../img/svg/phone.svg");
+      background-repeat: no-repeat; }
+  @media (max-width: 1023px) {
+    .contacts {
+      padding: 99px 0 100px; }
+      .contacts__map {
+        max-width: 324px;
+        min-height: 335px; }
+        .contacts__map::before {
+          top: 218px;
+          left: 109px; }
+      .contacts__img--desktop {
+        display: none; }
+      .contacts__img--tablet {
+        display: block; }
+      .contacts__descriptions h3 {
+        margin-bottom: 29px; }
+      .contacts__location p::before {
+        top: 3px; }
+      .contacts__location span {
+        display: block; }
+      .contacts__phone::before {
+        top: -2px; } }
+  @media (max-width: 767px) {
+    .contacts {
+      padding: 59px 0 65px; }
+      .contacts__inner {
+        flex-wrap: wrap; }
+      .contacts__map {
+        order: 2;
+        margin: 0 auto;
+        max-width: 290px;
+        min-height: 316px; }
+        .contacts__map::before {
+          top: 224px;
+          left: 112px; }
+      .contacts__img--tablet {
+        display: none; }
+      .contacts__img--mobile {
+        display: block; }
+      .contacts__descriptions {
+        padding: 0;
+        margin-bottom: 36px; }
+        .contacts__descriptions h3 {
+          margin-bottom: 29px; }
+      .contacts__location p::before {
+        top: 3px; }
+      .contacts__location span {
+        display: block; }
+      .contacts__phone::before {
+        top: -2px; } }
+
+.main-footer {
+  min-height: 138px;
+  padding: 44px 0;
+  color: #f9fbfd;
+  background-color: #011c40; }
+  .main-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; }
+  .main-footer__logo {
+    margin-right: 40px;
+    transition: opacity 0.2s linear; }
+    .main-footer__logo svg {
+      width: 70px;
+      height: 38px;
+      display: block;
+      fill: #f9fbfd; }
+    .main-footer__logo:hover, .main-footer__logo:focus {
+      opacity: 0.5; }
+  .main-footer__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+  .main-footer__nav-item {
+    margin-right: 33px; }
+  .main-footer__nav-link {
+    display: block;
+    padding: 16px 0 15px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #f9fbfd;
+    transition: opacity 0.2s linear; }
+    .main-footer__nav-link:hover, .main-footer__nav-link:focus {
+      opacity: 0.5; }
+  .main-footer__social {
+    margin: 0 0 0 auto;
+    padding: 0;
+    -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+  .main-footer__social-item {
+    margin-left: 11px; }
+  .main-footer__social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s linear; }
+    .main-footer__social-link svg {
+      display: block;
+      fill: #f9fbfd; }
+    .main-footer__social-link:hover, .main-footer__social-link:focus {
+      opacity: 0.5; }
+  @media (max-width: 1023px) {
+    .main-footer {
+      min-height: 120px;
+      padding: 38px 0; }
+      .main-footer__logo {
+        margin-right: 25px; }
+        .main-footer__logo svg {
+          width: 38px;
+          height: 20px; }
+      .main-footer__nav-item {
+        margin-right: 23px; }
+      .main-footer__nav-link {
+        font-size: 12px; }
+      .main-footer__social {
+        margin: 0 0 0 auto;
+        -ms-transform: translateX(7px);
+            transform: translateX(7px); }
+      .main-footer__social-item {
+        margin-left: 9px; }
+      .main-footer__social-link {
+        width: 30px;
+        height: 30px; }
+        .main-footer__social-link--fb svg {
+          margin-left: 5px;
+          width: 9px;
+          height: 16px; }
+        .main-footer__social-link--ig svg {
+          width: 16px;
+          height: 16px; }
+        .main-footer__social-link--twitter svg {
+          width: 16px;
+          height: 13px; } }
+  @media (max-width: 767px) {
+    .main-footer {
+      min-height: 120px;
+      padding: 40px 0; }
+      .main-footer__logo {
+        margin-right: 25px; }
+        .main-footer__logo svg {
+          width: 42px;
+          height: 22px; }
+      .main-footer__nav-list {
+        margin-top: 24px;
+        width: 100%;
+        display: block; }
+      .main-footer__nav-item {
+        margin: 0 0 8px; }
+      .main-footer__nav-link {
+        padding: 5px 0; }
+      .main-footer__social {
+        margin: 5px 0 0;
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px); }
+      .main-footer__social-item {
+        margin-left: 0;
+        margin-right: 6px; }
+      .main-footer__social-link--fb svg {
+        margin-left: 0; } }
