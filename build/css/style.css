@@ -493,11 +493,10 @@ p {
     .main-header {
       background-image: url("../img/desktop/intro__bg@2x.jpg"); } }
   .main-header__nav {
-    padding-top: 30px; }
+    padding-top: 36px; }
   .main-header__nav-inner {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
   .main-header__logo svg {
@@ -515,7 +514,7 @@ p {
     margin-left: 34px; }
   .main-header__nav-link {
     display: block;
-    padding: 15px 0;
+    padding: 5px 0;
     font-weight: 500;
     line-height: 1.25;
     color: #f9fbfd;
@@ -525,7 +524,7 @@ p {
   .main-header__burger {
     display: none; }
   .main-header__promo {
-    margin-top: 195px;
+    margin-top: 200px;
     padding-left: 95px; }
     .main-header__promo h1 {
       font-size: 54px;
@@ -546,7 +545,7 @@ p {
       background-image: url("../img/tablet/intro__bg@2x.jpg"); } }
   @media (max-width: 1023px) {
       .main-header__nav {
-        padding-top: 16px; }
+        padding-top: 28px; }
       .main-header__logo svg {
         width: 38px;
         height: 20px; }
@@ -554,12 +553,12 @@ p {
         margin-left: 24px; }
       .main-header__nav-link {
         display: block;
-        padding: 17px 0 13px;
+        padding: 5px 0;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.2; }
       .main-header__promo {
-        margin-top: 208px;
+        margin-top: 217px;
         padding-left: 0; }
         .main-header__promo h1 {
           font-size: 50px;
@@ -584,6 +583,8 @@ p {
         width: 100%;
         top: 0;
         background-color: #f9fbfd; }
+      .main-header__nav-inner {
+        flex-wrap: wrap; }
       .main-header__nav--close {
         background-color: transparent; }
       .main-header__nav--close .main-header__logo svg {
@@ -695,6 +696,7 @@ p {
     flex-shrink: 0;
     width: 560px;
     height: 301px;
+    background-color: #e3ecf6;
     background-image: url("../img/desktop/penguins@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
@@ -911,13 +913,13 @@ p {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; }
-  .cruises__img-tablet {
+    justify-content: center; }
+  .cruises__img--tablet {
+    display: none; }
+  .cruises__img--mobile {
     display: none; }
   .cruises__item {
     position: relative;
-    flex-grow: 1;
-    flex-shrink: 0;
     width: 260px;
     display: flex;
     flex-wrap: wrap;
@@ -989,13 +991,11 @@ p {
       .cruises h2 {
         margin-bottom: 33px;
         font-size: 26px; }
-      .cruises__img-desctop {
+      .cruises__img--desktop {
         display: none; }
-      .cruises__img-tablet {
+      .cruises__img--tablet {
         display: block; }
       .cruises__item {
-        flex-grow: 1;
-        flex-shrink: 0;
         width: 309px;
         padding: 30px 30px 27px 35px; }
       .cruises__description {
@@ -1006,13 +1006,11 @@ p {
       .cruises h2 {
         margin-bottom: 13px;
         font-size: 24px; }
-      .cruises__img-desctop {
+      .cruises__img--tablet {
         display: none; }
-      .cruises__img-tablet {
+      .cruises__img--mobile {
         display: block; }
       .cruises__item {
-        flex-grow: 1;
-        flex-shrink: 0;
         width: 270px;
         margin: 15px 10px;
         padding: 30px 30px 17px 25px; }
