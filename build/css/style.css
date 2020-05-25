@@ -1109,10 +1109,14 @@ p {
     display: flex;
     align-items: center; }
     .feedback__checkbox input {
-      display: none;
+      position: absolute;
+      opacity: 0;
       padding: 0;
       width: 18px;
       min-height: 18px; }
+      .feedback__checkbox input:hover + label::before,
+      .feedback__checkbox input:focus + label::before {
+        outline: 2px solid cyan; }
     .feedback__checkbox label {
       display: block;
       margin-top: 5px;
@@ -1212,6 +1216,8 @@ p {
     outline: 2px solid cyan; }
   .feedback__error {
     outline: 2px solid red; }
+  .feedback__field input:hover, .feedback__field input:focus {
+    outline: 2px solid cyan; }
 
 .contacts {
   padding-top: 120px;

@@ -82,10 +82,16 @@
     align-items: center;
 
     input {
-      display: none;
+      position: absolute;
+      opacity: 0;
       padding: 0;
       width: 18px;
       min-height: 18px;
+
+      &:hover + label::before,
+      &:focus + label::before {
+        outline: 2px solid cyan;
+      }
     }
 
     label {
@@ -237,5 +243,12 @@
 
   &__error {
     outline: 2px solid red;
+  }
+
+  &__field input {
+    &:hover,
+    &:focus {
+      outline: 2px solid cyan;
+    }
   }
 }
