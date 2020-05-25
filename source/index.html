@@ -71,19 +71,35 @@
     </header>
 
     <main class="main-content">
-      <section class="about">
-        <div class="container about__wrapper">
-          <div class="about__inner-content">
-            <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
+      <section class="about container about__wrapper">
+        <div class="about__inner-content">
+          <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
 
-            <p>
-              Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
-              круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько
-              видов пингвинов, китов, морских котиков и&nbsp;многое другое.
-            </p>
+          <p>
+            Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+            круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько
+            видов пингвинов, китов, морских котиков и&nbsp;многое другое.
+          </p>
+        </div>
+
+        <div class="about__inner-image">
+          <div class="about__img about__img--desktop">
+            <!-- 1х: 560px*301px; 2x: 1120px*602px Desktop -->
+            <img src="img/desktop/content/penguins@1x.jpg" width="560" height="301"
+              srcset="img/desktop/content/penguins@1x.jpg 1x, img/desktop/content/penguins@2x.jpg 2x" alt="пингвины">
           </div>
 
-          <div class="about__inner-image"></div>
+          <div class="about__img about__img--tablet">
+            <!-- 1х: 324px*264px; 2x: 648px*528px Tablet -->
+            <img src="img/tablet/penguins@1x.jpg" width="324" height="264"
+              srcset="img/tablet/content/penguins@1x.jpg 1x, img/tablet/content/penguins@2x.jpg 2x" alt="пингвины">
+          </div>
+
+          <div class="about__img about__img--mobile">
+            <!-- 1х: 290px*186px; 2x: 1120px*602px Mobile -->
+            <img src="img/mobile/content/penguins@1x.jpg" width="290" height="186"
+              srcset="img/mobile/content/penguins@1x.jpg 1x, img/mobile/content/penguins@2x.jpg 2x" alt="пингвины">
+          </div>
         </div>
       </section>
 
@@ -126,478 +142,470 @@
         </div>
       </section>
 
-      <section class="cruises">
-        <div class="container">
-          <h2>Ближайшие круизы</h2>
+      <section class="cruises container">
+        <h2>Ближайшие круизы</h2>
 
-          <ul class="cruises__list">
-            <li class="cruises__item">
-              <div class="cruises__img--desktop">
-                <!-- 1х: 260px*386px; 2x: 520px*772px Desktop -->
-                <img src="img/desktop/content/item-1@1x.jpg" width="260" height="386"
-                  srcset="img/desktop/content/item-1@1x.jpg 1x, img/desktop/content/item-1@2x.jpg 2x"
-                  alt="Круиз Астория">
-              </div>
+        <ul class="cruises__list">
+          <li class="cruises__item">
+            <div class="cruises__img cruises__img--desktop">
+              <!-- 1х: 260px*386px; 2x: 520px*772px Desktop -->
+              <img src="img/desktop/content/item-1@1x.jpg" width="260" height="386"
+                srcset="img/desktop/content/item-1@1x.jpg 1x, img/desktop/content/item-1@2x.jpg 2x" alt="Круиз Астория">
+            </div>
 
 
-              <div class="cruises__img--tablet">
-                <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
-                <img src="img/tablet/content/item-1@1x.jpg" width="309" height="386"
-                  srcset="img/tablet/content/item-1@1x.jpg 1x, img/tablet/content/item-1@2x.jpg 2x" alt="Круиз Астория">
-              </div>
+            <div class="cruises__img cruises__img--tablet">
+              <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
+              <img src="img/tablet/content/item-1@1x.jpg" width="309" height="386"
+                srcset="img/tablet/content/item-1@1x.jpg 1x, img/tablet/content/item-1@2x.jpg 2x" alt="Круиз Астория">
+            </div>
 
-              <div class="cruises__img--mobile">
-                <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
-                <img src="img/mobile/content/item-1@1x.jpg" width="270" height="386"
-                  srcset="img/mobile/content/item-1@1x.jpg 1x, img/mobile/content/item-1@2x.jpg 2x" alt="Круиз Астория">
-              </div>
+            <div class="cruises__img cruises__img--mobile">
+              <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
+              <img src="img/mobile/content/item-1@1x.jpg" width="270" height="386"
+                srcset="img/mobile/content/item-1@1x.jpg 1x, img/mobile/content/item-1@2x.jpg 2x" alt="Круиз Астория">
+            </div>
 
 
-              <h3>Круиз “Астория”</h3>
+            <h3>Круиз “Астория”</h3>
 
-              <div class="cruises__description">
-                <h4>Круиз “Астория”</h4>
+            <div class="cruises__description">
+              <h4>Круиз “Астория”</h4>
 
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
 
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
+                  <p>
+                    Аргентина - Фолклендские острова - Антарктида
+                  </p>
+                </li>
 
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
 
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
+                  <p>
+                    Ушуайя
+                  </p>
+                </li>
 
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
 
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
+                  <p>
+                    11 дней
+                  </p>
+                </li>
 
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
 
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
+                  <p>
+                    от <span>11500</span> $
+                  </p>
+                </li>
+              </ul>
 
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
 
-            <li class="cruises__item">
+          <li class="cruises__item">
+            <!-- 1х: 260px*386px; 2x: 520px*772px -->
+            <img src="img/desktop/content/item-7@1x.jpg" width="260" height="386"
+              srcset="img/desktop/content/item-7@1x.jpg 1x, img/desktop/content/item-7@2x.jpg 2x" alt="Круиз Элайн">
+
+            <h3>Круиз “Элайн”</h3>
+
+            <div class="cruises__description">
+              <h4>Круиз “Элайн”</h4>
+
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
+
+                  <p>
+                    Аргентина - Фолклендские острова - Антарктида - Чили
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
+
+                  <p>
+                    Буэнос-Айрес
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
+
+                  <p>
+                    20 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>14500</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <div class="cruises__img--desktop">
+              <!-- 1х: 260px*386px; 2x: 520px*772px Desktop -->
+              <img src="img/desktop/content/item-3@1x.jpg" width="260" height="386"
+                srcset="img/desktop/content/item-3@1x.jpg 1x, img/desktop/content/item-3@2x.jpg 2x"
+                alt="Круиз Атлантис">
+            </div>
+
+            <div class="cruises__img--tablet">
+              <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
+              <img src="img/tablet/content/item-3@1x.jpg" width="309" height="386"
+                srcset="img/tablet/content/item-3@1x.jpg 1x, img/tablet/content/item-3@2x.jpg 2x" alt="Круиз Атлантис">
+            </div>
+
+            <div class="cruises__img--mobile">
+              <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
+              <img src="img/mobile/content/item-3@1x.jpg" width="270" height="386"
+                srcset="img/mobile/content/item-3@1x.jpg 1x, img/mobile/content/item-3@2x.jpg 2x" alt="Круиз Атлантис">
+            </div>
+
+            <h3>Круиз “Атлантис”</h3>
+
+            <div class="cruises__description">
+              <h4>Круиз “Атлантис”</h4>
+
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
+
+                  <p>
+                    Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
+
+                  <p>
+                    Ушуайя
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
+
+                  <p>
+                    15 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>14500</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <div class="cruises__img--desktop">
               <!-- 1х: 260px*386px; 2x: 520px*772px -->
-              <img src="img/desktop/content/item-7@1x.jpg" width="260" height="386"
-                srcset="img/desktop/content/item-7@1x.jpg 1x, img/desktop/content/item-7@2x.jpg 2x" alt="Круиз Элайн">
-
-              <h3>Круиз “Элайн”</h3>
-
-              <div class="cruises__description">
-                <h4>Круиз “Элайн”</h4>
-
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
-
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
-
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
-
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
-
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-
-            <li class="cruises__item">
-              <div class="cruises__img--desktop">
-                <!-- 1х: 260px*386px; 2x: 520px*772px Desktop -->
-                <img src="img/desktop/content/item-3@1x.jpg" width="260" height="386"
-                  srcset="img/desktop/content/item-3@1x.jpg 1x, img/desktop/content/item-3@2x.jpg 2x"
-                  alt="Круиз Атлантис">
-              </div>
-
-              <div class="cruises__img--tablet">
-                <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
-                <img src="img/tablet/content/item-3@1x.jpg" width="309" height="386"
-                  srcset="img/tablet/content/item-3@1x.jpg 1x, img/tablet/content/item-3@2x.jpg 2x"
-                  alt="Круиз Атлантис">
-              </div>
-
-              <div class="cruises__img--mobile">
-                <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
-                <img src="img/mobile/content/item-3@1x.jpg" width="270" height="386"
-                  srcset="img/mobile/content/item-3@1x.jpg 1x, img/mobile/content/item-3@2x.jpg 2x"
-                  alt="Круиз Атлантис">
-              </div>
-
-              <h3>Круиз “Атлантис”</h3>
-
-              <div class="cruises__description">
-                <h4>Круиз “Атлантис”</h4>
-
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
-
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
-
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
-
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
-
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-
-            <li class="cruises__item">
-              <div class="cruises__img--desktop">
-                <!-- 1х: 260px*386px; 2x: 520px*772px -->
-                <img src="img/desktop/content/item-4@1x.jpg" width="260" height="386"
-                  srcset="img/desktop/content/item-4@1x.jpg 1x, img/desktop/content/item-4@2x.jpg 2x"
-                  alt="Круиз Одиссей">
-              </div>
-
-              <div class="cruises__img--tablet">
-                <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
-                <img src="img/tablet/content/item-4@1x.jpg" width="309" height="386"
-                  srcset="img/tablet/content/item-4@1x.jpg 1x, img/tablet/content/item-4@2x.jpg 2x" alt="Круиз Одиссей">
-              </div>
-
-              <div class="cruises__img--mobile">
-                <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
-                <img src="img/mobile/content/item-4@1x.jpg" width="270" height="386"
-                  srcset="img/mobile/content/item-4@1x.jpg 1x, img/mobile/content/item-4@2x.jpg 2x" alt="Круиз Одиссей">
-              </div>
-
-
-              <h3>Круиз “Одиссей”</h3>
-
-              <div class="cruises__description">
-                <h4>Круиз “Одиссей”</h4>
-
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
-
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
-
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
-
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
-
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-
-            <li class="cruises__item">
-              <div class="cruises__img--desktop">
-                <!-- 1х: 260px*386px; 2x: 520px*772px -->
-                <img src="img/desktop/content/item-5@1x.jpg" width="260" height="386"
-                  srcset="img/desktop/content/item-5@1x.jpg 1x, img/desktop/content/item-5@2x.jpg 2x"
-                  alt="Круиз Олимпия">
-              </div>
-
-              <div class="cruises__img--tablet">
-                <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
-                <img src="img/tablet/content/item-5@1x.jpg" width="309" height="386"
-                  srcset="img/tablet/content/item-5@1x.jpg 1x, img/tablet/content/item-5@2x.jpg 2x" alt="Круиз Олимпия">
-              </div>
-
-              <div class="cruises__img--mobile">
-                <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
-                <img src="img/mobile/content/item-5@1x.jpg" width="270" height="386"
-                  srcset="img/mobile/content/item-5@1x.jpg 1x, img/mobile/content/item-5@2x.jpg 2x" alt="Круиз Олимпия">
-              </div>
-
-              <h3>Круиз “Олимпия”</h3>
-
-              <div class="cruises__description">
-                <h4>Круиз “Олимпия”</h4>
-
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
-
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
-
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
-
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
-
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-
-            <li class="cruises__item">
-              <div class="cruises__img--desktop">
-                <!-- 1х: 260px*386px; 2x: 520px*772px -->
-                <img src="img/desktop/content/item-6@1x.jpg" width="260" height="386"
-                  srcset="img/desktop/content/item-6@1x.jpg 1x, img/desktop/content/item-6@2x.jpg 2x"
-                  alt="Круиз Аврора">
-              </div>
-
-              <div class="cruises__img--tablet">
-                <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
-                <img src="img/tablet/content/item-6@1x.jpg" width="309" height="386"
-                  srcset="img/tablet/content/item-6@1x.jpg 1x, img/tablet/content/item-6@2x.jpg 2x" alt="Круиз Аврора">
-              </div>
-
-              <div class="cruises__img--mobile">
-                <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
-                <img src="img/mobile/content/item-6@1x.jpg" width="309" height="386"
-                  srcset="img/mobile/content/item-6@1x.jpg 1x, img/mobile/content/item-6@2x.jpg 2x" alt="Круиз Аврора">
-              </div>
-
-
-              <h3>Круиз “Аврора”</h3>
-
-              <div class="cruises__description">
-                <h4>Круиз “Аврора”</h4>
-
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
-
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
-
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
-
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
-
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
-
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
-
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-
-            <li class="cruises__item">
+              <img src="img/desktop/content/item-4@1x.jpg" width="260" height="386"
+                srcset="img/desktop/content/item-4@1x.jpg 1x, img/desktop/content/item-4@2x.jpg 2x" alt="Круиз Одиссей">
+            </div>
+
+            <div class="cruises__img--tablet">
+              <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
+              <img src="img/tablet/content/item-4@1x.jpg" width="309" height="386"
+                srcset="img/tablet/content/item-4@1x.jpg 1x, img/tablet/content/item-4@2x.jpg 2x" alt="Круиз Одиссей">
+            </div>
+
+            <div class="cruises__img--mobile">
+              <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
+              <img src="img/mobile/content/item-4@1x.jpg" width="270" height="386"
+                srcset="img/mobile/content/item-4@1x.jpg 1x, img/mobile/content/item-4@2x.jpg 2x" alt="Круиз Одиссей">
+            </div>
+
+
+            <h3>Круиз “Одиссей”</h3>
+
+            <div class="cruises__description">
+              <h4>Круиз “Одиссей”</h4>
+
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
+
+                  <p>
+                    Чили - Антарктида
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
+
+                  <p>
+                    Пунта-Аренас
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
+
+                  <p>
+                    13 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>9700</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <div class="cruises__img--desktop">
               <!-- 1х: 260px*386px; 2x: 520px*772px -->
-              <img src="img/desktop/content/item-7@1x.jpg" width="260" height="386"
-                srcset="img/desktop/content/item-7@1x.jpg 1x, img/desktop/content/item-7@2x.jpg 2x" alt="Круиз Леонор">
+              <img src="img/desktop/content/item-5@1x.jpg" width="260" height="386"
+                srcset="img/desktop/content/item-5@1x.jpg 1x, img/desktop/content/item-5@2x.jpg 2x" alt="Круиз Олимпия">
+            </div>
 
-              <h3>Круиз “Леонор”</h3>
+            <div class="cruises__img--tablet">
+              <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
+              <img src="img/tablet/content/item-5@1x.jpg" width="309" height="386"
+                srcset="img/tablet/content/item-5@1x.jpg 1x, img/tablet/content/item-5@2x.jpg 2x" alt="Круиз Олимпия">
+            </div>
 
-              <div class="cruises__description">
-                <h4>Круиз “Леонор”</h4>
+            <div class="cruises__img--mobile">
+              <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
+              <img src="img/mobile/content/item-5@1x.jpg" width="270" height="386"
+                srcset="img/mobile/content/item-5@1x.jpg 1x, img/mobile/content/item-5@2x.jpg 2x" alt="Круиз Олимпия">
+            </div>
 
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
+            <h3>Круиз “Олимпия”</h3>
 
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
+            <div class="cruises__description">
+              <h4>Круиз “Олимпия”</h4>
 
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
 
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
+                  <p>
+                    Аргентина - Фолклендские острова - Южная Георгия - Антарктида
+                  </p>
+                </li>
 
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
 
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
+                  <p>
+                    Ушуайя
+                  </p>
+                </li>
 
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
 
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
+                  <p>
+                    21 дней
+                  </p>
+                </li>
 
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
 
-            <li class="cruises__item">
+                  <p>
+                    от <span>18600</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <div class="cruises__img--desktop">
               <!-- 1х: 260px*386px; 2x: 520px*772px -->
-              <img src="img/desktop/content/item-8@1x.jpg" width="260" height="386"
-                srcset="img/desktop/content/item-8@1x.jpg 1x, img/desktop/content/item-8@2x.jpg 2x"
-                alt="Круиз Минион - 1">
+              <img src="img/desktop/content/item-6@1x.jpg" width="260" height="386"
+                srcset="img/desktop/content/item-6@1x.jpg 1x, img/desktop/content/item-6@2x.jpg 2x" alt="Круиз Аврора">
+            </div>
 
-              <h3>Круиз “Минион - 1”</h3>
+            <div class="cruises__img--tablet">
+              <!-- 1х: 309px*386px; 2x: 618px*772px Tablet -->
+              <img src="img/tablet/content/item-6@1x.jpg" width="309" height="386"
+                srcset="img/tablet/content/item-6@1x.jpg 1x, img/tablet/content/item-6@2x.jpg 2x" alt="Круиз Аврора">
+            </div>
 
-              <div class="cruises__description">
-                <h4>Круиз “Минион - 1”</h4>
+            <div class="cruises__img--mobile">
+              <!-- 1х: 270px*386px; 2x: 540px*772px Mobile -->
+              <img src="img/mobile/content/item-6@1x.jpg" width="309" height="386"
+                srcset="img/mobile/content/item-6@1x.jpg 1x, img/mobile/content/item-6@2x.jpg 2x" alt="Круиз Аврора">
+            </div>
 
-                <ul class="cruises__description-list">
-                  <li class="cruises__description-item">
-                    <h5>Маршрут</h5>
 
-                    <p>
-                      Аргентина - Фолклендские острова - Антарктида - Чили
-                    </p>
-                  </li>
+            <h3>Круиз “Аврора”</h3>
 
-                  <li class="cruises__description-item">
-                    <h5>Порт отправления</h5>
+            <div class="cruises__description">
+              <h4>Круиз “Аврора”</h4>
 
-                    <p>
-                      Буэнос-Айрес
-                    </p>
-                  </li>
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
 
-                  <li class="cruises__description-item">
-                    <h5>Продолжительность</h5>
+                  <p>
+                    Аргентина - Антарктида - Чили
+                  </p>
+                </li>
 
-                    <p>
-                      20 дней
-                    </p>
-                  </li>
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
 
-                  <li class="cruises__description-item">
-                    <h5>Цена</h5>
+                  <p>
+                    Ушуайя
+                  </p>
+                </li>
 
-                    <p>
-                      от <span>14500</span> $
-                    </p>
-                  </li>
-                </ul>
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
 
-                <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+                  <p>
+                    14 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>11700</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <!-- 1х: 260px*386px; 2x: 520px*772px -->
+            <img src="img/desktop/content/item-7@1x.jpg" width="260" height="386"
+              srcset="img/desktop/content/item-7@1x.jpg 1x, img/desktop/content/item-7@2x.jpg 2x" alt="Круиз Леонор">
+
+            <h3>Круиз “Леонор”</h3>
+
+            <div class="cruises__description">
+              <h4>Круиз “Леонор”</h4>
+
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
+
+                  <p>
+                    Чили - Южная Георгия - Антарктида - Аргентина
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
+
+                  <p>
+                    Пунта-Аренас
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
+
+                  <p>
+                    17 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>12500</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+
+          <li class="cruises__item">
+            <!-- 1х: 260px*386px; 2x: 520px*772px -->
+            <img src="img/desktop/content/item-8@1x.jpg" width="260" height="386"
+              srcset="img/desktop/content/item-8@1x.jpg 1x, img/desktop/content/item-8@2x.jpg 2x"
+              alt="Круиз Минион - 1">
+
+            <h3>Круиз “Минион - 1”</h3>
+
+            <div class="cruises__description">
+              <h4>Круиз “Минион - 1”</h4>
+
+              <ul class="cruises__description-list">
+                <li class="cruises__description-item">
+                  <h5>Маршрут</h5>
+
+                  <p>
+                    Аргентина - Антарктида
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Порт отправления</h5>
+
+                  <p>
+                    Ушуайя
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Продолжительность</h5>
+
+                  <p>
+                    11 дней
+                  </p>
+                </li>
+
+                <li class="cruises__description-item">
+                  <h5>Цена</h5>
+
+                  <p>
+                    от <span>12300</span> $
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn cruises__btn" aria-label="открыть ссылку заказа круиза">Забронировать</a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="feedback">
@@ -613,31 +621,31 @@
               <form method="post" action="https://echo.htmlacademy.ru">
                 <p>Оставьте заявку <span>и мы свяжемся с вами</span> в ближайшее время</p>
 
-                <div class="feedback__name">
+                <div class="feedback__name feedback__field-js">
                   <label for="feedback-name">
                     <span class="visually-hidden">Введите ваше имя</span>
                   </label>
 
                   <input type="text" name="feedback-name" id="feedback-name" placeholder="Валерия" minlength="1"
-                    maxlength="37" autocomplete="off">
+                    maxlength="37" autocomplete="off" required>
                 </div>
 
-                <div class="feedback__phone">
+                <div class="feedback__phone feedback__field-js">
                   <label for="feedback-phone">
                     <span class="visually-hidden">Введите ваш телефон</span>
                   </label>
 
-                  <input type="tel" name="feedback-phone" id="feedback-phone" placeholder="89236889975" maxlength="16"
-                    autocomplete="off">
+                  <input type="tel" name="feedback-phone" id="feedback-phone" placeholder="89236889975" minlength="16"
+                    autocomplete="off" required>
                 </div>
 
-                <div class="feedback__mail">
+                <div class="feedback__mail feedback__field-js">
                   <label for="feedback-mail">
                     <span class="visually-hidden">Введите ваш адрес электронной почты</span>
                   </label>
 
                   <input type="email" name="feedback-mail" id="feedback-mail" placeholder="grishaewa.lera@gmail.com"
-                    autocomplete="off">
+                    autocomplete="off" required>
                 </div>
 
                 <div class="feedback__checkbox">
@@ -655,46 +663,44 @@
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__inner">
-            <div id="map" class="contacts__map">
+      <section class="contacts container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__inner">
+          <div id="map" class="contacts__map">
 
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1433.7753266527052!2d30.321489966995006!3d59.9388736230593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1590173621797!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad540572dbb50ff543c94e5736200ad7da31c584114310a55beb6fd058e41508f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
 
-              <div class="contacts__img contacts__img--desktop">
-                <!-- 1х: 560px*306px; 2x: 1120px*612px Desktop -->
-                <img src="img/desktop/content/map@1x.jpg" width="560" height="306"
-                  srcset="img/desktop/content/map@1x.jpg 1x, img/desktop/content/map@2x.jpg 2x" alt="Карта">
-              </div>
-
-              <div class="contacts__img contacts__img--tablet">
-                <!-- 1х: 324px*335px; 2x: 648px*670px Tablet -->
-                <img src="img/tablet/content/map@1x.jpg" width="324" height="335"
-                  srcset="img/tablet/content/map@1x.jpg 1x, img/tablet/content/map@2x.jpg 2x" alt="Карта">
-              </div>
-
-              <div class="contacts__img contacts__img--mobile">
-                <!-- 1х: 290px*316px; 2x: 648px*670px Mobile -->
-                <img src="img/mobile/content/map@1x.jpg" width="290" height="316"
-                  srcset="img/mobile/content/map@1x.jpg 1x, img/mobile/content/map@2x.jpg 2x" alt="Карта">
-              </div>
+            <div class="contacts__img contacts__img--desktop">
+              <!-- 1х: 560px*306px; 2x: 1120px*612px Desktop -->
+              <img src="img/desktop/content/map@1x.jpg" width="560" height="306"
+                srcset="img/desktop/content/map@1x.jpg 1x, img/desktop/content/map@2x.jpg 2x" alt="Карта">
             </div>
 
-
-            <div class="contacts__descriptions">
-              <h3>
-                У вас ещё остались вопросы или сомнения?
-                Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.
-              </h3>
-
-              <div class="contacts__location">
-                <p>г. Санкт Петербург, <span>ул. Большая Конюшенная, 19/8</span></p>
-              </div>
-
-              <a class="contacts__phone" href="tel:8-800-200-00-00" aria-label="телефон компании">8-800-200-00-00</a>
+            <div class="contacts__img contacts__img--tablet">
+              <!-- 1х: 324px*335px; 2x: 648px*670px Tablet -->
+              <img src="img/tablet/content/map@1x.jpg" width="324" height="335"
+                srcset="img/tablet/content/map@1x.jpg 1x, img/tablet/content/map@2x.jpg 2x" alt="Карта">
             </div>
+
+            <div class="contacts__img contacts__img--mobile">
+              <!-- 1х: 290px*316px; 2x: 648px*670px Mobile -->
+              <img src="img/mobile/content/map@1x.jpg" width="290" height="316"
+                srcset="img/mobile/content/map@1x.jpg 1x, img/mobile/content/map@2x.jpg 2x" alt="Карта">
+            </div>
+          </div>
+
+
+          <div class="contacts__descriptions">
+            <h3>
+              У вас ещё остались вопросы или сомнения?
+              Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.
+            </h3>
+
+            <div class="contacts__location">
+              <p>г. Санкт Петербург, <span>ул. Большая Конюшенная, 19/8</span></p>
+            </div>
+
+            <a class="contacts__phone" href="tel:8-800-200-00-00" aria-label="телефон компании">8-800-200-00-00</a>
           </div>
         </div>
       </section>

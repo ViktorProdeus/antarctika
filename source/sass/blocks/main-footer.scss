@@ -1,13 +1,12 @@
 .main-footer {
   min-height: 138px;
-  padding: 44px 0;
+  padding: 50px 0;
 
   color: $lightgray;
   background-color: $darkblue;
 
   &__inner {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
   }
@@ -46,7 +45,7 @@
   &__nav-link {
     display: block;
 
-    padding: 16px 0 15px;
+    padding: 5px 0;
     font-weight: 500;
     line-height: 1.25;
     color: $text-light;
@@ -59,6 +58,8 @@
   }
 
   &__social {
+    max-width: 153px;
+    width: 100%;
     margin: 0 0 0 auto;
     padding: 0;
     transform: translateX(10px);
@@ -94,7 +95,7 @@
 
   @media (max-width: $tablet--max) {
     min-height: 120px;
-    padding: 38px 0;
+    padding: 46px 0;
 
     &__logo {
       margin-right: 25px;
@@ -114,6 +115,7 @@
     }
 
     &__social {
+      max-width: 117px;
       margin: 0 0 0 auto;
       transform: translateX(7px);
     }
@@ -148,6 +150,10 @@
     min-height: 120px;
     padding: 40px 0;
 
+    &__inner {
+      flex-wrap: wrap;
+    }
+
     &__logo {
       margin-right: 25px;
 
@@ -172,6 +178,7 @@
     }
 
     &__social {
+      max-width: 100%;
       margin: 5px 0 0;
       transform: translateX(-10px);
     }

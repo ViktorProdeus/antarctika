@@ -683,7 +683,8 @@ p {
   line-height: 1.5; }
 
 .about {
-  padding: 120px 0; }
+  padding-top: 120px;
+  padding-bottom: 120px; }
   .about__wrapper {
     display: flex;
     align-items: center;
@@ -694,18 +695,26 @@ p {
       margin-bottom: 20px; }
   .about__inner-image {
     flex-shrink: 0;
-    width: 560px;
+    max-width: 560px;
+    width: 100%;
     height: 301px;
-    background-color: #e3ecf6;
-    background-image: url("../img/desktop/penguins@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .about__inner-image {
-        background-image: url("../img/desktop/penguins@2x.jpg"); } }
+    background-color: #e3ecf6; }
+    .about__inner-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100%; }
+  .about__img {
+    width: 100%;
+    height: 100%; }
+    .about__img--tablet {
+      display: none; }
+    .about__img--mobile {
+      display: none; }
   @media (max-width: 1023px) {
     .about {
-      padding: 91px 0 92px; }
+      padding-top: 91px;
+      padding-bottom: 92px; }
       .about__inner-content {
         padding-right: 30px; }
         .about__inner-content h2 {
@@ -714,16 +723,15 @@ p {
           line-height: 1.4; }
       .about__inner-image {
         width: 324px;
-        height: 264px;
-        background-image: url("../img/tablet/penguins@1x.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; } }
-    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-      .about__inner-image {
-        background-image: url("../img/tablet/penguins@2x.jpg"); } }
+        height: 264px; }
+      .about__img--tablet {
+        display: block; }
+      .about__img--desktop {
+        display: none; } }
   @media (max-width: 767px) {
     .about {
-      padding: 58px 0 66px; }
+      padding-top: 58px;
+      padding-bottom: 66px; }
       .about__wrapper {
         flex-wrap: wrap; }
       .about__inner-content {
@@ -736,14 +744,12 @@ p {
           margin-bottom: 32px; }
       .about__inner-image {
         margin: 0 auto;
-        width: 290px;
-        height: 186px;
-        background-image: url("../img/mobile/penguins@1x.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; } }
-    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-      .about__inner-image {
-        background-image: url("../img/mobile/penguins@2x.jpg"); } }
+        width: 100%;
+        height: auto; }
+      .about__img--mobile {
+        display: block; }
+      .about__img--tablet {
+        display: none; } }
 
 .advantages {
   padding: 112px 0 80px;
@@ -903,7 +909,8 @@ p {
           line-height: 1.43; } }
 
 .cruises {
-  padding: 112px 0 104px; }
+  padding-top: 112px;
+  padding-bottom: 104px; }
   .cruises h2 {
     text-align: center;
     margin-bottom: 33px; }
@@ -913,17 +920,18 @@ p {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: flex-start; }
   .cruises__img--tablet {
     display: none; }
   .cruises__img--mobile {
     display: none; }
   .cruises__item {
     position: relative;
-    width: 260px;
+    width: 100%;
+    max-width: 22.4%;
     display: flex;
     flex-wrap: wrap;
-    margin: 15px;
+    margin: 1.29%;
     padding: 30px 30px 22px;
     min-height: 386px;
     color: #f9fbfd;
@@ -936,7 +944,9 @@ p {
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .cruises__item h3 {
       align-self: flex-end;
       font-weight: 500;
@@ -950,7 +960,10 @@ p {
     opacity: 0;
     -ms-transform: scale(0);
         transform: scale(0);
-    padding: 29px 25px 22px;
+    padding: 10.5% 25px 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -962,32 +975,35 @@ p {
     .cruises__description h4 {
       font-weight: 500;
       font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 15px; }
+      line-height: 1.5; }
     .cruises__description-list {
       max-width: 1160px;
-      margin: 0 auto;
+      min-height: 70%;
+      margin: 0;
       padding: 0;
-      list-style: none; }
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
     .cruises__description-item {
-      margin-bottom: 12px; }
+      margin-bottom: 5.5%; }
       .cruises__description-item h5 {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.4;
-        margin-bottom: 2px; }
+        margin-bottom: 1.1%; }
       .cruises__description-item p {
         font-weight: normal;
         font-size: 14px;
         line-height: 1.4;
         color: #d8d8d9; }
   .cruises__btn {
-    margin-top: 24px;
-    min-width: 210px;
+    width: 100%;
     min-height: 40px; }
   @media (max-width: 1023px) {
     .cruises {
-      padding: 91px 0 86px; }
+      padding-top: 91px;
+      padding-bottom: 86px; }
       .cruises h2 {
         margin-bottom: 33px;
         font-size: 26px; }
@@ -996,13 +1012,19 @@ p {
       .cruises__img--tablet {
         display: block; }
       .cruises__item {
-        width: 309px;
+        margin: 15px;
+        max-width: 45.57%;
         padding: 30px 30px 27px 35px; }
       .cruises__description {
-        padding: 30px 35px 22px; } }
+        padding: 10% 35px 11%; }
+        .cruises__description-list {
+          min-height: auto; }
+        .cruises__description-item h5 {
+          margin-bottom: 0; } }
   @media (max-width: 767px) {
     .cruises {
-      padding: 59px 0 50px; }
+      padding-top: 59px;
+      padding-bottom: 50px; }
       .cruises h2 {
         margin-bottom: 13px;
         font-size: 24px; }
@@ -1010,12 +1032,22 @@ p {
         display: none; }
       .cruises__img--mobile {
         display: block; }
+      .cruises__list {
+        justify-content: center; }
       .cruises__item {
-        width: 270px;
+        width: 100%;
+        max-width: 400px;
         margin: 15px 10px;
         padding: 30px 30px 17px 25px; }
       .cruises__description {
-        padding: 30px 25px 22px; } }
+        padding: 30px 25px 35px; }
+        .cruises__description-item {
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .cruises__description-item h5 {
+            margin-bottom: 4px; } }
 
 .feedback {
   padding: 50px 0;
@@ -1176,9 +1208,14 @@ p {
         top: 7px; }
       .feedback__btn {
         margin-top: 27px; } }
+  .feedback__active {
+    outline: 2px solid cyan; }
+  .feedback__error {
+    outline: 2px solid red; }
 
 .contacts {
-  padding: 120px 0; }
+  padding-top: 120px;
+  padding-bottom: 120px; }
   .contacts__inner {
     display: flex;
     justify-content: space-between;
@@ -1198,15 +1235,16 @@ p {
       left: 249px;
       background-image: url("../img/svg/pin.svg");
       background-repeat: no-repeat; }
-    .contacts__map img {
+    .contacts__map iframe {
       position: absolute;
-      z-index: 1;
-      height: 100%;
+      z-index: 100;
       width: 100%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0; }
+      height: 100%; }
+    .contacts__map img {
+      width: 100%;
+      height: auto;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .contacts__img--tablet {
     display: none; }
   .contacts__img--mobile {
@@ -1252,7 +1290,8 @@ p {
       background-repeat: no-repeat; }
   @media (max-width: 1023px) {
     .contacts {
-      padding: 99px 0 100px; }
+      padding-top: 90px;
+      padding-bottom: 100px; }
       .contacts__map {
         max-width: 324px;
         min-height: 335px; }
@@ -1273,17 +1312,18 @@ p {
         top: -2px; } }
   @media (max-width: 767px) {
     .contacts {
-      padding: 59px 0 65px; }
+      padding-top: 59px;
+      padding-bottom: 65px; }
       .contacts__inner {
         flex-wrap: wrap; }
       .contacts__map {
         order: 2;
         margin: 0 auto;
-        max-width: 290px;
+        max-width: 580px;
         min-height: 316px; }
         .contacts__map::before {
-          top: 224px;
-          left: 112px; }
+          top: 71%;
+          left: 39%; }
       .contacts__img--tablet {
         display: none; }
       .contacts__img--mobile {
@@ -1302,12 +1342,11 @@ p {
 
 .main-footer {
   min-height: 138px;
-  padding: 44px 0;
+  padding: 50px 0;
   color: #f9fbfd;
   background-color: #011c40; }
   .main-footer__inner {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start; }
   .main-footer__logo {
@@ -1330,7 +1369,7 @@ p {
     margin-right: 33px; }
   .main-footer__nav-link {
     display: block;
-    padding: 16px 0 15px;
+    padding: 5px 0;
     font-weight: 500;
     line-height: 1.25;
     color: #f9fbfd;
@@ -1338,6 +1377,8 @@ p {
     .main-footer__nav-link:hover, .main-footer__nav-link:focus {
       opacity: 0.5; }
   .main-footer__social {
+    max-width: 153px;
+    width: 100%;
     margin: 0 0 0 auto;
     padding: 0;
     -ms-transform: translateX(10px);
@@ -1362,7 +1403,7 @@ p {
   @media (max-width: 1023px) {
     .main-footer {
       min-height: 120px;
-      padding: 38px 0; }
+      padding: 46px 0; }
       .main-footer__logo {
         margin-right: 25px; }
         .main-footer__logo svg {
@@ -1373,6 +1414,7 @@ p {
       .main-footer__nav-link {
         font-size: 12px; }
       .main-footer__social {
+        max-width: 117px;
         margin: 0 0 0 auto;
         -ms-transform: translateX(7px);
             transform: translateX(7px); }
@@ -1395,6 +1437,8 @@ p {
     .main-footer {
       min-height: 120px;
       padding: 40px 0; }
+      .main-footer__inner {
+        flex-wrap: wrap; }
       .main-footer__logo {
         margin-right: 25px; }
         .main-footer__logo svg {
@@ -1409,6 +1453,7 @@ p {
       .main-footer__nav-link {
         padding: 5px 0; }
       .main-footer__social {
+        max-width: 100%;
         margin: 5px 0 0;
         -ms-transform: translateX(-10px);
             transform: translateX(-10px); }

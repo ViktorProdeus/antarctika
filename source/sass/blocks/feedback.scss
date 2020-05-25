@@ -230,4 +230,12 @@
       margin-top: 27px;
     }
   }
+
+  &__active {
+    outline: 2px solid cyan;
+  }
+
+  &__error {
+    outline: 2px solid red;
+  }
 }
