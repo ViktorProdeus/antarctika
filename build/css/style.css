@@ -1102,8 +1102,9 @@ p {
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
-      font: inherit;
-      border: 0; }
+      border: 0;
+      border-radius: 0;
+      font: inherit; }
     .feedback__order p {
       margin-bottom: 27px;
       font-weight: 500;
