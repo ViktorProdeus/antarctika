@@ -64,6 +64,7 @@
       margin-bottom: 20px;
       width: 100%;
       min-height: 43px;
+      appearance: none;
 
       font: inherit;
       border: 0;
@@ -242,6 +243,10 @@
   }
 
   &__error {
+    outline: 2px solid red;
+  }
+
+  &__checkbox--error label::before {
     outline: 2px solid red;
   }
 

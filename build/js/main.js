@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/polyfill-foreach */ \"./js/utils/polyfill-foreach.js\");\n/* harmony import */ var _utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/init-ie11-download */ \"./js/utils/init-ie11-download.js\");\n/* harmony import */ var _main_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main/menu */ \"./js/main/menu.js\");\n\n // Utils\n// ---------------------------------\n\nObject(_utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__[\"forEachPolyfill\"])();\nObject(_utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__[\"initIe11Download\"])(); // Modules\n// ---------------------------------\n\n\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/polyfill-foreach */ \"./js/utils/polyfill-foreach.js\");\n/* harmony import */ var _utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/init-ie11-download */ \"./js/utils/init-ie11-download.js\");\n/* harmony import */ var _main_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main/menu */ \"./js/main/menu.js\");\n/* harmony import */ var _main_validate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main/validate */ \"./js/main/validate.js\");\n\n // Utils\n// ---------------------------------\n\nObject(_utils_polyfill_foreach__WEBPACK_IMPORTED_MODULE_0__[\"forEachPolyfill\"])();\nObject(_utils_init_ie11_download__WEBPACK_IMPORTED_MODULE_1__[\"initIe11Download\"])(); // Modules\n// ---------------------------------\n\n\n\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\nvar menu = function menu() {\n  var isClassNoJs = document.querySelector(\".main-header--no-js\");\n  var siteNavigation = document.querySelector(\".main-header__nav\");\n  var buttonMenu = document.querySelector(\".main-header__burger\");\n\n  if (isClassNoJs) {\n    buttonMenu.classList.add(\"main-header__burger--close\");\n    isClassNoJs.classList.remove(\"main-header--no-js\");\n    siteNavigation.classList.add(\"main-header__nav--close\");\n  }\n\n  buttonMenu.addEventListener(\"click\", function (evt) {\n    evt.preventDefault();\n    buttonMenu.classList.toggle(\"main-header__burger--close\");\n    siteNavigation.classList.toggle(\"main-header__nav--close\");\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu());\n\n//# sourceURL=webpack:///./js/main/menu.js?");
+
+/***/ }),
+
+/***/ "./js/main/validate.js":
+/*!*****************************!*\
+  !*** ./js/main/validate.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar validate = function validate() {\n  var form = document.querySelector(\".feedback__order form\");\n  var fields = form.querySelectorAll(\".feedback__field input\");\n  var checkbox = form.querySelector(\".feedback__checkbox input\");\n\n  var setErrorFor = function setErrorFor(input) {\n    var formControl = input;\n    formControl.classList.add(\"feedback__error\");\n  };\n\n  var setSuccessFor = function setSuccessFor(input) {\n    var formControl = input;\n    formControl.classList.remove(\"feedback__error\");\n  };\n\n  fields.forEach(function (element) {\n    element.addEventListener(\"input\", function () {\n      setSuccessFor(element);\n    });\n  });\n  checkbox.addEventListener(\"input\", function () {\n    if (checkbox.checked) {\n      checkbox.parentNode.classList.remove(\"feedback__checkbox--error\");\n    }\n  });\n  form.addEventListener(\"submit\", function (evt) {\n    evt.preventDefault();\n    var succesFields = 0;\n    fields.forEach(function (element) {\n      if (!element.value) {\n        setErrorFor(element);\n      } else {\n        setSuccessFor(element);\n        succesFields++;\n      }\n    });\n\n    if (!checkbox.checked) {\n      checkbox.parentNode.classList.add(\"feedback__checkbox--error\");\n      succesFields--;\n    } else {\n      checkbox.parentNode.classList.remove(\"feedback__checkbox--error\");\n      succesFields++;\n    }\n\n    if (succesFields === 4) {\n      setTimeout(function () {\n        form.reset();\n      }, 600);\n    }\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (validate());\n\n//# sourceURL=webpack:///./js/main/validate.js?");
 
 /***/ }),
 

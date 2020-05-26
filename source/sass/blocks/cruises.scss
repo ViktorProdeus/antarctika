@@ -30,8 +30,6 @@
 
   &__item {
     position: relative;
-    // flex-grow: 1;
-    // flex-shrink: 0;
     width: 100%;
     max-width: 22.4%;
 
@@ -42,7 +40,6 @@
     padding: 30px 30px 22px;
     min-height: 386px;
     color: $text-light;
-
     overflow: hidden;
 
     img {
@@ -64,7 +61,8 @@
       line-height: 1.5;
     }
 
-    &:hover .cruises__description {
+    &:hover .cruises__description,
+    &:focus .cruises__description {
       opacity: 1;
       transform: scale(1);
     }
@@ -93,7 +91,6 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 1.5;
-      // margin-bottom: 15px;
     }
 
     &-list {
@@ -130,7 +127,6 @@
   }
 
   &__btn {
-    // margin-top: 24px;
     width: 100%;
     min-height: 40px;
   }
@@ -162,7 +158,6 @@
     }
 
     &__description {
-      // padding: 30px 35px 22px;
       padding: 10% 35px 11%;
 
       &-list {

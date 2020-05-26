@@ -10,3 +10,4 @@ initIe11Download();
 // ---------------------------------
 
 import './main/menu';
+import './main/validate';

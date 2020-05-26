@@ -6,7 +6,7 @@ module.exports = {
   context: path.resolve(__dirname, `source`),
 
   entry: {
-    main: `./js/main.js`
+    main: `./js/main.js`,
   }, // Точка входа
 
   output: {
