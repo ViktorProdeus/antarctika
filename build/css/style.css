@@ -1104,6 +1104,7 @@ p {
               appearance: none;
       border: 0;
       border-radius: 0;
+      background-color: #f9fbfd;
       font: inherit; }
     .feedback__order p {
       margin-bottom: 27px;
